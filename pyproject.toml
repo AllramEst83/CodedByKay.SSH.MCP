@@ -1,0 +1,15 @@
+[project]
+name = "codedbykay-ssh-mcp"
+version = "0.1.0"
+description = "Read-only SFTP MCP server: list_dir, stat, read_text. No write tools."
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0",
+    "paramiko>=3.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
